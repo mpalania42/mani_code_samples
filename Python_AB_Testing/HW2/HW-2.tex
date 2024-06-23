@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{xcolor}
+\large
+\title{Homework \# 2}
+
+\begin{document}
+\begin{titlepage}
+	\begin{center}
+    \line(1,0){300}\\
+    [0.65cm]
+	\huge{\bfseries Homework \# 2}\\
+	\line(1,0){300}\\
+	\textsc{\LARGE A/B Testing}\\
+	\textsc{\LARGE  Fall 2023}\\
+	[5.5cm]
+	\textsc{\LARGE NAMES: names of all students here}\\
+	\textsc{\LARGE ANDREW IDs: Andrew IDs of all students here}\\
+	[1.5cm]
+	\textsc{\LARGE One student submits homework on Gradescope}\\
+	\textsc{\LARGE Then add other students as team members}\\
+	[5.5cm]
+	\textsc{DUE November 21, 5.00pm EST}\\
+	[0.5cm]
+	\textsc{\large Show your work as part of your answers.\\Include code and outputs as needed (screen captures are enough).\\Cite all your sources (human generated and otherwise).}\\
+	\end{center}
+\end{titlepage}
+
+\section*{\color{black} Question 1 {\bf [90 points]}}
+
+Define the following concepts using your own words {\bf [10 points each]}:\\
+
+a) Panel data\\
+
+b) Serial correlation\\
+
+c) Time dummy\\
+
+d) Fixed effect\\
+
+e) Instrumental variable\\
+
+f) First-stage regression\\
+
+g) Exclusion restriction\\
+
+h) Differences-in-differences\\
+
+i) Propensity score matching\\
+
+\vspace{1cm}
+
+{\color{blue}
+
+Type your answer here!
+}\\
+
+\section*{\color{black} Question 2 {\bf [94 points]}}
+
+A think tank has been hired to study the effect of streaming on piracy. For that purpose, they compiled the dataset available to you for the purpose of this homework in file HW-2-a.csv. The following covariates are included:\\
+
+month: the month to which the data pertains\\
+
+id: the identifier of the movie analyzed\\
+
+available: an indicator for whether the movie was available in streaming platforms\\
+
+log\_IPs: the log of the number of IP addresses seen illegally exchanging the movie over the Internet\\
+
+Use this dataset to answer the following questions:\\
+
+a) how many movies and which months are included in this dataset {\bf [2+2 points]}?\\
+
+b) plot the average number of IP addresses per movie exchanging the movie illegally over time. From this plot, what do you conclude about how the availability of movies on streaming platforms affect piracy? Show regression results using plain OLS to support your claim {\bf [10+5+15 points]}\\
+
+c) improve your empirical model using time dummies and show the results obtained. Is there a time trend in the number of IP addresses that are seen illegally exchanging a movie? Does this time trend make intuitive sense? {\bf [15+5+5 points]}\\
+
+d) improve your empirical model by adding movie fixed effects and show the results obtained. What do you conclude for how the availability of movies on streaming platforms affect piracy? If you conclusions in b) and d) are different, which one you believe more and Why? {\bf [15+10+10 points]}\\
+
+\vspace{1cm}
+
+{\color{blue}
+
+Type your answer here!
+}\\
+
+\section*{\color{black} Question 3 {\bf [66 points]}}
+
+A few years ago a new technology was made available for racing cars in the pre-competitive bracket. A consulting firm is now studying the impact of that technology on race outcomes and gathered a dataset on a selected number of cars shared with you for the purposes of this homework in file HW-2-b.csv. This data set includes the following covariates:\\
+
+id: the id of the car\\
+
+tech: indicator for whether the car adopted the new technology\\
+
+after: an indicator for whether the technology was already available or not\\
+
+time: the identifier of the race\\
+
+safety: a normalized rating for the safety of the car\\
+
+speed: a normalized rating for the speed of the car\\
+
+weight: the weight of the usual driver of the car\\
+
+ability: an estimate of the ability of the usual driver of the car\\
+
+points: the points obtained by the usual driver of the car\\
+
+Use this dataset to answer the following questions:\\
+
+a) How many races and how many cars are included in this dataset? {\bf [2+2 points]}\\
+
+b) Are there are significant relationships between points, safety, speed, ability and weight? {\bf [10 points]}\\
+
+c) What is the effect of the new technology on points, safety and ability? {\bf [30 points]}\\
+
+d) Are any of your estimates in c) capturing a causal effect? Show evidence to support your claim {\bf [10+12 points]}\\ 
+
+\vspace{1cm}
+
+{\color{blue}
+
+Type your answer here!
+}\\
+
+\end{document}
